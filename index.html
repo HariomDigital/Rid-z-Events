@@ -16,8 +16,36 @@
         <div class="section">
             <h2>Contact:</h2>
             <div class="button-grid">
-                <a href="tel:+91 8779613166" class="button"><i>📞</i> Call</a>
-                <a href="https://wa.me/+918779613166" class="button"><i>💬</i> WhatsApp</a>
+                <a href="#" class="button" onclick="showCallOptions()"><i>📞</i> Call</a>
+
+                <div id="call-options" class="popup">
+                  <div class="popup-content">
+                    <span class="close-button" onclick="closeCallOptions()">&times;</span>
+                    <p><a href="tel:+918779613166">📞 Riddhi Gala : +91 8779613166</a></p>
+                    <p><a href="tel:+919876543210">📞 Shreyssee Kranik : +91 9920388834</a></p>
+                    <p><a href="tel:+917654321098">📞 Sonal choudhary : +91 9930147834</a></p>
+                  </div>
+                </div>
+<script>// Function to show the popup
+    function showCallOptions() {
+      document.getElementById("call-options").style.display = "block";
+    }
+    
+    // Function to close the popup
+    function closeCallOptions() {
+      document.getElementById("call-options").style.display = "none";
+    }
+    
+    // Close the popup when clicking outside the popup content
+    window.onclick = function (event) {
+      var popup = document.getElementById("call-options");
+      if (event.target == popup) {
+        popup.style.display = "none";
+      }
+    };
+    </script>
+
+                                <a href="https://wa.me/+918779613166" class="button"><i>💬</i> WhatsApp</a>
                 <a href="mailto:funfestplanners@gmail.com" class="button"><i>✉️</i> Email</a>
                 <a href="https://g.co/kgs/L8Ag8tZ" class="button"><i>⭐</i> Review</a>
                 <button class="button" id="share-button"><i>🔗</i> Share Me</button>
