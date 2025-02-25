@@ -1,2 +1,2 @@
-# Ridz Events
+# Rid'z Events
 Card
