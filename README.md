@@ -1,2 +1,2 @@
-# FunFestPlanners
+# Ridz Events
 Card
