@@ -253,3 +253,18 @@ padding: 10px;
     color: #070707;
   }
   
+.flexdirection{
+ display: flex;
+ flex-direction: row;
+    background: #e0f7fa;
+    color: #003832;
+    border: none;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 10px);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
